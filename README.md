@@ -1,12 +1,18 @@
-Pour activer l'environnement virtuel:
+Pour réaliser ses manipulations, il est nécessaire d'installer python et gitbash sur votre ordinateur
 
-1. ouvrir une console windows (touche Windows+r), tapez "cmd.exe" puis "ok"
-2. dans votre dossier téléchargé, cliquez sur "venv"
-3. écrivez dans la console cd puis faites glisser le dossier "venv" dans la console puis appuyez sur la touche "entrée"
-4. executer la ligne suivante: activate.bat
+Avant, il faut télécharger le projet:
+
+1. ouvrir gitbash
+2. dans le dossier de votre choix, exécuter git clone "lienduprojet"
+
+Pour créer et activer l'environnement virtuel:
+
+1. exécuter la commande virtualenv -p python3 venv
+   venv est le nom de dossier. Dans le cas ùo l'on ne precise pas de chemin, le dossier sera créer dans le dossier actuel. Vous pouvez aussi mettre un chemin ("C:/exemple/nomdudossier")
+2. Dans la racine du dossier de votre environnement virtuel, éxecuter la commande source nomdudoosier/Scripts/activate
+3. Retourner dans la racine du dossier du projet puis lancez la commande "python -m pip install -r requirements.txt
 
 Pour lancer l'application:
 
-1. dans votre dossier téléchargé, accéder aux propriétés du fichier "main" et copier son emplacement (CTRL + C)
-2. dans la console, écrivez cd puis coller l'emplacement (CTRL + V) puis appuyez sur la touche "entrée"
-3. executer la ligne suivante: python main.py
+1. Dans la racine du dossier de votre projet, exécuter python main.py
+
